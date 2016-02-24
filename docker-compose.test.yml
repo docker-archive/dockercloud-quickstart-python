@@ -1,0 +1,7 @@
+sut:
+  image: $IMAGE_NAME
+  links:
+    - redis
+  command: echo "Test pass!"
+redis:
+  image: redis

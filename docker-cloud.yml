@@ -1,0 +1,8 @@
+web:
+  image: dockercloud/quickstart-python
+  links:
+    - redis
+  ports:
+    - "80"
+redis:
+  image: redis
